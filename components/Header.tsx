@@ -22,10 +22,12 @@ function Header() {
         <div>
           <ThemeToggler />
         </div>
-        <UserButton afterSignOutUrl="/" />
-        <SignedOut>
-          <SignInButton afterSignInUrl="/dashboard" mode="modal" />
-        </SignedOut>
+        <div className="px-1">
+          <UserButton afterSignOutUrl="/" />
+          <SignedOut>
+            <SignInButton afterSignInUrl="/dashboard" mode="modal" />
+          </SignedOut>
+        </div>
       </div>
     </header>
   );
